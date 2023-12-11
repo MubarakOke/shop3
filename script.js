@@ -18,12 +18,12 @@ let isCartVisible = false;
 function toggleAddProduct() {
     const addProductSection = document.querySelector('.add-product');
     isAddProductVisible = !isAddProductVisible;
-    
-    if (isAddProductVisible) {   
-        addProductSection.classList.remove('hidden');
-    } else {
-        addProductSection.classList.add('hidden');
-    }
+
+    if (isAddProductVisible) {
+        addProductSection.style.display = 'flex'; 
+      } else {
+        addProductSection.style.display = 'none';
+      }
     }
 
 function toggleCart() {

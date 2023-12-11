@@ -127,7 +127,7 @@ body {
   }
   
   .add-product {
-    display: hidden;
+    display: none;
     flex-direction: column;
   }
   
