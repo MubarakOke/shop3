@@ -44,7 +44,7 @@ products.forEach(product => {
     productElement.innerHTML = `
       <img src="${product.image}" alt="${product.name}">
       <h3>${product.name}</h3>
-      <p>$${product.amount}</p>
+      <p>#${product.amount}</p>
       <button onclick="addToCart(${product.id})">Add to Cart</button>
     `;
     return productElement;
