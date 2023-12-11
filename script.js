@@ -1,6 +1,14 @@
 let products = [
-    { id: 1, name: "Laptop", amount: 800 },
+    { id: 1, name: "Laptop", amount: 800,  },
     { id: 2, name: "Smartphone", amount: 600 },
+    { id: 3, name: "Smartphone", amount: 700 },
+    { id: 4, name: "Smartphone", amount: 400 },
+    { id: 5, name: "Smartphone", amount: 800 },
+    { id: 6, name: "Smartphone", amount: 200 },
+    { id: 7, name: "Smartphone", amount: 200 },
+    { id: 8, name: "Smartphone", amount: 600 },
+    { id: 9, name: "Smartphone", amount: 900 },
+    { id: 10, name: "Smartphone", amount: 300 },
   ];
   
   let cart = [];
