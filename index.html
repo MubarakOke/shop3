@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web3bridge Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Web3bridge Store</h1>
+  <div class="container">
+    <div class="main">
+      <div class="products">
+        <!-- Products will be dynamically generated here -->
+      </div>
+    </div>
+    <div class="cart-sidebar">
+      <button onclick="toggleCart()" class="toggle-btn">Cart</button>
+      <div class="cart hidden">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+          <!-- Cart items will be displayed here -->
+        </div>
+        <div class="cart-total">
+          <p>Total: #<span id="totalAmount">0</span></p>
+          <input type="text" id="couponCode" placeholder="Enter coupon code">
+          <button onclick="applyCoupon()">Apply Coupon</button>
+          <button onclick="checkout()">Checkout</button>
+        </div>
+      </div>
+      <button onclick="toggleAddProduct()" class="toggle-btn">+ Add Product</button>
+      <div class="add-product hidden">
+        <h3>Add Product</h3>
+
+        <label for="productName">Name:</label>
+        <input type="text" id="productName" name="productName" placeholder="Product Name">
+        <label for="productImage">Picture:</label>
+        <input type="file" id="productImage" accept="image/*">
+        <label for="productPrice">Price:</label>
+        <input type="text" id="productPrice" name="productPrice" placeholder="Price">
+        <button onclick="addNewProduct()">Add New Product</button>
+      </div>
+    </div>
+    <!-- Messages to display item/product addition -->
+    <div class="messages">
+      <p class="item-added hidden">Item added to cart!</p>
+      <p class="product-added hidden">Product added!</p>
+    </div>
+  </div>
+  <div class="top-message hidden" id="topMessage"></div>
+  <script src="script.js"></script>
+</body>
+</html>
